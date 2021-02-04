@@ -117,7 +117,7 @@ const char *password = "1234567890";
 /**
   * CHANGEZ l'ID du drone par celui que Alphatango vous a fourni (Trigramme + Modèle + numéro série) !
   */
-const char drone_id[] = "DIYEXPTHEFLYINGMADPSYCHOPATH08";// default : ILLEGAL_DRONE_USE_YOUR_SHOTGUN
+const char drone_id[] = "ILLEGAL_DRONE_USE_YOUR_SHOTGUN";
 
 /********************************************************************************************************************
  * XAV

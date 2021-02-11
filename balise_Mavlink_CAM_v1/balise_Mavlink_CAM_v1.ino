@@ -335,7 +335,7 @@ void setup()
     delay(500);
     
     #if CARTE == 'esp01'
-      WiFi.setOutputPower(10.5); // max 20.5dBm
+      WiFi.setOutputPower(20.5); // max 20.5dBm
       softap_config current_config;
       wifi_softap_get_config(&current_config);
       current_config.beacon_interval = 1000;

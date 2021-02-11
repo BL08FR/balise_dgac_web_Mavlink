@@ -14,3 +14,5 @@ La différence avec mon système? Je vole en pixhawk et ce gps vient en redondan
 Pour installer les cartes dans Arduino IDE, collez ceci dans fichiers/préférences champs gestionnaire de cartes:
 http://arduino.esp8266.com/stable/package_esp8266com_index.json,https://dl.espressif.com/dl/package_esp32_index.json
 
+[11/02/2021] Version "CAM" ajoutée, permet le pilotage d'une caméra xiaomi YI (première version mais fonctionne probablement avec les suivantes), canal RC n°9 PWM<1300 rien ou arrêt d'enregistrement 1300<PWM<1700 = photo (si pwm continue photo tout le 4s environ), si 1700<PWM<2200 enregistrement vidéo.
+Pour un usage en mission avec déclenchement automatique, passer servo7 à la valeur 10 (camera trigger) dans mission planner, réglez dans la partie gimbal la PWM de base à 1100, trigger à 1350 et la durée à 2 (200ms).
